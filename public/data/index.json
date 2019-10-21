@@ -1,0 +1,45 @@
+{
+    "xbanner": [
+        {
+            "img": "https://gw.alicdn.com/tfs/TB1Wxi2trsrBKNjSZFpXXcXhFXa-183-144.png_.webp",
+            "title": "天猫超市"
+        },
+        {
+            "img": "//gw.alicdn.com/tfs/TB1ISdWSFXXXXbFXXXXXXXXXXXX-146-147.png_110x10000.jpg_.webp",
+            "title": "苏宁易购"
+        },
+        {
+            "img": "//gw.alicdn.com/tfs/TB12CFXSFXXXXcpapXXXXXXXXXX-146-147.png_110x10000.jpg_.webp",
+            "title": "分类"
+        },
+        {
+            "img": "//gw.alicdn.com/tfs/TB15lhOSFXXXXaKXpXXXXXXXXXX-147-147.png_110x10000.jpg_.webp",
+            "title": "聚划算"
+        },
+        {
+            "img": "//gw.alicdn.com/tfs/TB1Jc0fSFXXXXXTapXXXXXXXXXX-146-147.png_110x10000.jpg_.webp",
+            "title": "天猫国际"
+        },
+        {
+            "img": "//gw.alicdn.com/tfs/TB1wSoFa5qAXuNjy1XdXXaYcVXa-196-196.png?avatar=1_110x10000.jpg_.webp",
+            "title": "天猫超市"
+        },
+        {
+            "img": "https://img.alicdn.com/tfs/TB10UHQaNjaK1RjSZKzXXXVwXXa-183-144.png?getAvatar=1_.webp",
+            "title": "划算"
+        },
+        {
+            "img": "https://gw.alicdn.com/tps/TB1eXc7PFXXXXb4XpXXXXXXXXXX-183-144.png?getAvatar=1_.webp",
+            "title": "分类"
+        },
+        {
+            "img": "https://gw.alicdn.com/tfs/TB18P98tyQnBKNjSZFmXXcApVXa-183-144.png?getAvatar=1_.webp",
+            "title": "充值中心"
+        },
+        {
+            "img": "https://gw.alicdn.com/tfs/TB1o0FLtyMnBKNjSZFoXXbOSFXa-183-144.png_.webp",
+            "title": "数码家电"
+        }
+    ],
+    "active": "//img11.360buyimg.com/mobilecms/s1190x360_jfs/t1/73032/29/12501/39026/5d9e94f0E47f74b80/e5988e145122ad32.jpg"
+}
