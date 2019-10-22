@@ -3,7 +3,7 @@
  * @Author: chenjia
  * @Date: 2019-09-28 17:54:07
  * @LastEditors: chenjia
- * @LastEditTime: 2019-10-21 15:29:21
+ * @LastEditTime: 2019-10-22 14:30:58
  */
 import Vue from 'vue'
 import Router from 'vue-router'
@@ -142,7 +142,7 @@ const router = new Router({
     },
     {
       path: '/shrz',
-      name: '协商历史',
+      name: '商户入驻',
       component: () => import('./views/shouhou/shrz.vue')
     },
     {
@@ -154,15 +154,72 @@ const router = new Router({
       path: "/zujian",
       name: "zujian",
       component: () => import('./components/gou.vue')
+    },
+    {
+      path: "/shouhuo",
+      name: "收货",
+      component: () => import('./views/shezhi/shouhuo.vue')
+    },
+    {
+      path: "/shdzk",
+      name: "收货地址空",
+      component: () => import('./views/shezhi/shdzk.vue')
+    },
+    {
+      path: '/goodjs',
+      name: 'goodjs',
+      component: () => import('./views/good/goodjs.vue')
+    },
+    {
+      path: '/weilogin',
+      name: 'weilogin',
+      component: () => import('./views/my/weilogin.vue')
+    },
+    {
+      path: '/xthis',
+      name: 'xthis',
+      component: () => import('./views/my/xthis.vue')
+    },
+    {
+      path: '/adddizhi',
+      name: 'adddizhi',
+      component: () => import('./views/order/adddizhi.vue')
+    },
+    {
+      path: '/paysuccess',
+      name: 'paysuccess',
+      component: () => import('./views/order/paysuccess.vue')
+    },
+    {
+      path: '/goodxqpj',
+      name: 'goodxqpj',
+      component: () => import('./views/good/goodxqpj.vue')
+    },
+    {
+      path: '/yidenglu',
+      name: 'yidenglu',
+      component: () => import('./views/my/yidenglu.vue')
+    },
+    {
+      path: '/shezhi',
+      name: 'shezhi',
+      component: () => import('./views/shezhi/shezhi.vue')
+    },
+    {
+      path: '/myphone',
+      name: 'myphone',
+      component: () => import('./views/shezhi/myphone.vue')
+    },
+    {
+      path: '/accountanquan',
+      name: 'accountanquan',
+      component: () => import('./views/shezhi/accountanquan.vue')
+    },
+    {
+      path: '/gexingqm',
+      name: 'gexingqm',
+      component: () => import('./views/shezhi/geren/gexingqm.vue')
     }
-    // {
-    //   path: '/about',
-    //   name: 'about',
-    //   // route level code-splitting
-    //   // this generates a separate chunk (about.[hash].js) for this route
-    //   // which is lazy-loaded when the route is visited.
-    //   component: () => import(/* webpackChunkName: "about" */ './views/index/About.vue')
-    // }
   ]
 })
 export default router

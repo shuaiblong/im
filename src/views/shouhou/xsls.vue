@@ -3,7 +3,7 @@
  * @Author: chenjia
  * @Date: 2019-10-21 13:50:14
  * @LastEditors: chenjia
- * @LastEditTime: 2019-10-21 14:47:59
+ * @LastEditTime: 2019-10-22 09:53:35
  -->
 <template>
   <div>
@@ -20,7 +20,7 @@
         <div>
           <img
             class="tx"
-            src="http://b-ssl.duitang.com/uploads/item/201802/21/20180221223815_xkkyq.jpg"
+            src="http://img3.duitang.com/uploads/item/201507/23/20150723115018_ma428.thumb.700_0.jpeg"
             alt
           />
         </div>
@@ -37,7 +37,7 @@
         <div>
           <img
             class="tx"
-            src="http://b-ssl.duitang.com/uploads/item/201802/21/20180221223815_xkkyq.jpg"
+            src="http://img3.duitang.com/uploads/item/201507/23/20150723115018_ma428.thumb.700_0.jpeg"
             alt
           />
         </div>

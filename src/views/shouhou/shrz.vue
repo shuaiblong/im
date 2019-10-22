@@ -3,12 +3,12 @@
  * @Author: chenjia
  * @Date: 2019-10-21 14:55:38
  * @LastEditors: chenjia
- * @LastEditTime: 2019-10-21 17:19:33
+ * @LastEditTime: 2019-10-22 10:17:11
  -->
 <template>
   <div>
     <!-- 顶部导航栏 -->
-    <van-nav-bar title="商家入驻" left-text left-arrow @click-left="onClickLft" />
+    <van-nav-bar title="商户入驻" left-text left-arrow @click-left="onClickLft" />
     <van-cell-group>
       <van-field v-model="username" maxlength="8" label="姓名 :" placeholder="请输入用户名" />
       <!-- 手机号输入框 -->
