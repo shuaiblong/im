@@ -3,7 +3,7 @@
  * @Author: chenjia
  * @Date: 2019-09-28 17:54:07
  * @LastEditors: chenjia
- * @LastEditTime: 2019-10-22 14:30:58
+ * @LastEditTime: 2019-10-22 15:54:15
  */
 import Vue from 'vue'
 import Router from 'vue-router'
@@ -164,6 +164,11 @@ const router = new Router({
       path: "/shdzk",
       name: "收货地址空",
       component: () => import('./views/shezhi/shdzk.vue')
+    },
+    {
+      path: "/shdz",
+      name: "收货地址",
+      component: () => import('./views/shezhi/shdz.vue')
     },
     {
       path: '/goodjs',
