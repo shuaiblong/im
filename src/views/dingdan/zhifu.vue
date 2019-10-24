@@ -3,7 +3,7 @@
  * @Author: chenjia
  * @Date: 2019-10-14 14:46:09
  * @LastEditors: chenjia
- * @LastEditTime: 2019-10-14 17:49:06
+ * @LastEditTime: 2019-10-24 16:37:09
  -->
 <template>
   <div class="zhifu">
@@ -63,7 +63,9 @@
       </ul>
     </div>
     <div class="button">
-      <button class="qbtn">确认支付</button>
+      <router-link to="/paysuccess">
+        <button class="qbtn">确认支付</button>
+      </router-link>
     </div>
   </div>
 </template>

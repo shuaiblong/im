@@ -3,7 +3,7 @@
  * @Author: chenjia
  * @Date: 2019-10-19 09:51:58
  * @LastEditors: chenjia
- * @LastEditTime: 2019-10-19 15:01:20
+ * @LastEditTime: 2019-10-24 16:56:04
  -->
 <template>
   <div>
@@ -55,7 +55,7 @@
               <span class="number">数量：1</span>
             </div>
           </div>
-          <button class="btn">申请售后</button>
+          <button @click="shenq" class="btn">申请售后</button>
         </div>
         <div class="shop">
           <p class="dian">
@@ -108,6 +108,10 @@ export default {
     //   返回按钮
     onClickLft() {
       this.$router.go(-1);
+    },
+    // 申请售后
+    shenq() {
+      this.$router.push("/shlx");
     }
   }
 };

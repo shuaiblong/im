@@ -3,7 +3,7 @@
  * @Author: chenjia
  * @Date: 2019-09-28 17:54:07
  * @LastEditors: chenjia
- * @LastEditTime: 2019-10-11 14:33:12
+ * @LastEditTime: 2019-10-24 11:41:46
  -->
  <!--
   * @Descripttion: 
@@ -21,7 +21,7 @@
       <van-tabbar-item icon="orders-o" to="fenlei">分类</van-tabbar-item>
       <van-tabbar-item icon="diamond-o">加入极地鹰</van-tabbar-item>
       <van-tabbar-item icon="shopping-cart-o" to="/shopche">购物车</van-tabbar-item>
-      <van-tabbar-item icon="manager-o" to="/login">我的</van-tabbar-item>
+      <van-tabbar-item icon="manager-o" to="/weilogin">我的</van-tabbar-item>
     </van-tabbar>
   </div>
 </template>

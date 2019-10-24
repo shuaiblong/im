@@ -3,7 +3,7 @@
  * @Author: chenjia
  * @Date: 2019-10-12 15:29:16
  * @LastEditors: chenjia
- * @LastEditTime: 2019-10-12 15:38:30
+ * @LastEditTime: 2019-10-24 16:59:35
  -->
 <template>
   <div class="box">
@@ -24,7 +24,7 @@
       </div>
     </div>
     <div class="pingjia">
-      <textarea class="input">您对宝贝满意吗？和大家说说你的感受吧！</textarea>
+      <textarea class="input" placeholder="您对宝贝满意吗？和大家说说你的感受吧！"></textarea>
       <div class="tianjia">
         <ul>
           <li>
@@ -63,7 +63,7 @@ export default {
     return {
       value: 3,
       value1: 0,
-      value2:0,
+      value2: 0
     };
   },
   methods: {
@@ -81,7 +81,7 @@ export default {
 };
 </script>
 <style scoped>
-.box{
+.box {
   overflow: hidden;
 }
 .head {
@@ -103,15 +103,15 @@ export default {
   line-height: 11px;
   font-size: 32px;
 }
-.miaosu:after{
-  content:"";
+.miaosu:after {
+  content: "";
   display: block;
   clear: both;
 }
 .miaosu {
   width: 100%;
-  height: 84px;;
-  margin-top:-35px;
+  height: 84px;
+  margin-top: -35px;
   background-color: #fff;
   clear: both;
 }
@@ -150,7 +150,7 @@ export default {
   color: rgb(153, 153, 153);
 }
 .pingjia {
-  margin-top:-13px;
+  margin-top: -13px;
 }
 .pingjia ul {
   position: relative;

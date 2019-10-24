@@ -1,10 +1,17 @@
+<!--
+ * @Descripttion: 
+ * @Author: chenjia
+ * @Date: 2019-10-23 16:24:04
+ * @LastEditors: chenjia
+ * @LastEditTime: 2019-10-24 18:53:50
+ -->
 <template>
   <div class="box">
     <!-- 头部整体 -->
     <div class="head">
       <!-- 登录及头像 -->
-      <div class="deng">
-        <img src="../../assets/qq.png" />
+      <div class="deng" @click="login">
+        <img src="~@/assets/qq.png" />
         <span>点击登陆</span>
       </div>
       <!-- 设置和信息 -->
@@ -45,31 +52,31 @@
       </div>
       <!-- 待付款 待发货 -->
       <div class="daifukuan">
-        <div>
+        <div @click="dai">
           <p class="img">
-            <img src="../../assets/xihuan.png" />
+            <img src="~@/assets/xihuan.png" />
           </p>
           <p class="miaosu">待付款</p>
         </div>
-        <div>
+        <div @click="dai">
           <p class="img">
             <img src="../../assets/xihuan.png" />
           </p>
           <p class="miaosu">待发货</p>
         </div>
-        <div>
+        <div @click="dai">
           <p class="img">
             <img src="../../assets/xihuan.png" />
           </p>
           <p class="miaosu">待收货</p>
         </div>
-        <div>
+        <div @click="ping">
           <p class="img">
             <img src="../../assets/xihuan.png" />
           </p>
           <p class="miaosu">评价</p>
         </div>
-        <div>
+        <div @click="shou">
           <p class="img">
             <img src="../../assets/xihuan.png" />
           </p>
@@ -111,25 +118,49 @@
     </div>
     <!-- 猜你喜欢 -->
     <div class="like">
-        <div class="xin">
-                  <img src="../../assets/xihuan.png">
-      <span>猜你喜欢</span>
-        </div>
+      <div class="xin">
+        <img src="../../assets/xihuan.png" />
+        <span>猜你喜欢</span>
+      </div>
       <div>
         <xthis></xthis>
       </div>
+    </div>
+    <!-- 底部导航栏 -->
+    <div>
+      <navfoot></navfoot>
     </div>
   </div>
 </template>
 
 <script>
+import navfoot from "../../components/foot";
 import xthis from "./xthis";
 export default {
   components: {
-    xthis
+    xthis,
+    navfoot
   },
   data() {
     return {};
+  },
+  methods: {
+    //   跳转登录
+    login() {
+      this.$router.push("/login");
+    },
+    // 跳转订单
+    dai() {
+      this.$router.push("/dingdan");
+    },
+    // 跳转评价
+    ping() {
+      this.$router.push("/pingjia");
+    },
+    // 跳转售后
+    shou() {
+      this.$router.push("/tuihuan ");
+    }
   }
 };
 </script>
@@ -197,7 +228,7 @@ img {
   margin-top: 112px;
 }
 .shoucang .heng {
-  color: rgb(255,255,255) ;
+  color: rgb(255, 255, 255);
   font-size: 30px;
 }
 .shoucang .xuan {
@@ -280,16 +311,16 @@ img {
   width: 70px;
   height: 70px;
 }
-.like img{
+.like img {
   width: 32px;
   height: 32px;
-  vertical-align:middle;
+  vertical-align: middle;
 }
-.like span{
-  color:rgb(51,51,51) !important;
-  font-size:24px;
+.like span {
+  color: rgb(51, 51, 51) !important;
+  font-size: 24px;
   font-family: "PingFang-SC-Bold";
-   vertical-align:middle;
-   margin-left:20px;
+  vertical-align: middle;
+  margin-left: 20px;
 }
 </style>

@@ -3,7 +3,7 @@
  * @Author: chenjia
  * @Date: 2019-10-19 14:57:08
  * @LastEditors: chenjia
- * @LastEditTime: 2019-10-19 17:50:59
+ * @LastEditTime: 2019-10-24 17:06:08
  -->
 <template>
   <div>
@@ -48,7 +48,7 @@
           <div>
             <i class="iconfont icon-icon5"></i>
           </div>
-          <div class="size">
+          <div class="size" @click="tui">
             <p class="tui">我要退款(无需退货)</p>
             <p class="huo">没收到货，或与卖家协商同意不用退货只退款</p>
           </div>
@@ -88,6 +88,9 @@ export default {
   methods: {
     onClickLft() {
       this.$router.go(-1);
+    },
+    tui() {
+      this.$router.push("/tkxq");
     }
   }
 };

@@ -10,7 +10,7 @@
         </van-nav-bar>
         </div>
         <div class="dian">
-          <span class="radio"></span>
+          <!-- <span class="radio"></span> -->
           <span class="hong"></span>
         </div>
       </div>
@@ -43,6 +43,27 @@
         <div>
           <p>颜色漂亮156</p>
         </div>
+      </div>
+      <!-- 折叠面板 -->
+      <div class="zhedie">
+        <van-collapse v-model="activeName" accordion>
+  <van-collapse-item title="" name="1">
+          <div class="color">
+        <div>
+          <p>颜色漂亮156</p>
+        </div>
+        <div>
+          <p>颜色漂亮156</p>
+        </div>
+        <div>
+          <p>颜色漂亮156</p>
+        </div>
+        <div>
+          <p>颜色漂亮156</p>
+        </div>
+      </div>
+    </van-collapse-item>
+</van-collapse>
       </div>
     </div>
     <!-- 评价 -->
@@ -142,7 +163,9 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      activeName: '0'
+    };
   },
   methods: {
     onClickLeft(){
@@ -180,7 +203,7 @@ export default {
 .color {
   display: flex;
   justify-content: space-around;
-  margin-top: 29px;
+  margin-top: 6px;
 }
 .color p {
   font-size: 24px;

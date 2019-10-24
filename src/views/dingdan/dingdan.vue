@@ -3,7 +3,7 @@
  * @Author: chenjia
  * @Date: 2019-10-12 09:12:51
  * @LastEditors: chenjia
- * @LastEditTime: 2019-10-19 10:24:12
+ * @LastEditTime: 2019-10-24 16:47:58
  -->
 <!--
  * @Descripttion: 
@@ -20,7 +20,7 @@
         <span :class="cur==0?'change':''">全部</span>
       </li>
       <li @click="cur=1">
-        <span :class="cur==1?'change':''">待付款</span>
+        <span :class="cur==1?'change':''">付款</span>
       </li>
       <li @click="cur=2">
         <span :class="cur==2?'change':''">待发货</span>
@@ -127,7 +127,7 @@
           <p class="btn">
             <button>修改地址</button>
             <button @click="upshow">取消订单</button>
-            <button class="xuan">待付款</button>
+            <button @click="fu" class="xuan">付款</button>
           </p>
         </div>
       </div>
@@ -189,22 +189,24 @@ export default {
     };
   },
   created() {
-    this.axios
-      .get("http://192.168.0.40:5500/" + "../../../public/data/lianxi.json")
-      .then(res => {
-        console.log(res.data.daifukuan[0].dianpu);
-        this.list = res.data.daifukuan[0].dianpu;
-      });
+    this.axios.get("../../../public/data/lianxi.json").then(res => {
+      console.log(res.data.daifukuan[0].dianpu);
+      this.list = res.data.daifukuan[0].dianpu;
+    });
   },
   methods: {
     onClickLft() {
-      this.$router.push("/");
+      this.$router.push("weilogin");
     },
     upshow() {
       this.show = true;
     },
     qu() {
       this.show = false;
+    },
+    // 付款
+    fu() {
+      this.$router.push("/zhifu");
     }
   }
 };
@@ -340,15 +342,18 @@ export default {
   text-align: right;
 }
 .btn button {
-  border: 1px solid #666666;
+  border: 2px solid #666666;
   background: #ffffff;
   border-radius: 50px;
-  padding: 5px 20px;
+  width: 136px;
+  height: 46px;
   margin: 0 10px;
 }
 .xuan {
+  width: 136px;
+  height: 46px;
   color: #ff6d15;
-  border: 1px solid #ff6d15 !important;
+  border: 2px solid #ff6d15 !important;
 }
 
 .radio {

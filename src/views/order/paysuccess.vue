@@ -3,17 +3,17 @@
  * @Author: chenjia
  * @Date: 2019-10-22 13:54:42
  * @LastEditors: chenjia
- * @LastEditTime: 2019-10-22 14:33:21
+ * @LastEditTime: 2019-10-24 16:43:15
  -->
 <template>
   <div class="box">
     <!-- 头部 -->
     <div class="head">
-      <van-nav-bar title="支付成功" left-arrow @click-left="onClickLeft" @click-right="onClickRight" />
+      <van-nav-bar title="支付成功" left-arrow @click-left="onClickLeft" />
     </div>
     <!-- 显示订单支付成功 -->
     <div class="pay">
-      <img src="../../assets/pay.png" />
+      <img src="~@/assets/pay.png" />
       <div class="pay_d1">支付成功!</div>
       <div class="pay_d2">您的包裹正整装待发~</div>
     </div>
@@ -34,10 +34,10 @@
       <!-- 订单详情 返回首页 -->
       <div class="anniu">
         <span>
-          <button class="anniu_1">订单详情</button>
+          <button @click="xiang" class="anniu_1">订单详情</button>
         </span>
         <span>
-          <button class="anniu_2">返回首页</button>
+          <button @click="findex" class="anniu_2">返回首页</button>
         </span>
       </div>
     </div>
@@ -62,10 +62,15 @@ export default {
   },
   methods: {
     onClickLeft() {
-      Toast("返回");
+      this.$router.go(-1);
     },
-    onClickRight() {
-      Toast("按钮");
+    // 返回首页
+    findex() {
+      this.$router.push("/");
+    },
+    // 订单详情
+    xiang() {
+      this.$router.push("/dingdan");
     }
   }
 };
@@ -183,7 +188,7 @@ export default {
 }
 .anniu_2 {
   border-radius: 10px;
-  background-color: rgb(255, 114, 18);
+  background: linear-gradient(to right, rgb(255, 114, 18), rgb(255, 161, 40));
   font-size: 28px;
   color: rgb(255, 255, 255);
   margin-left: 61px;

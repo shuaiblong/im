@@ -17,7 +17,7 @@
           <van-row>
             <van-col span="12">
               <div class="xq">
-                <img class="xqimg" src="http://dummyimage.com/116x116" alt />
+                <img class="xqimg" src="~@/assets/index/g.png" alt />
                 <p class="xqtitle">
                   ￥206
                   <s class="hua">￥120</s>
@@ -26,7 +26,7 @@
             </van-col>
             <van-col span="12">
               <div class="xq">
-                <img class="xqimg" src="http://dummyimage.com/116x116" alt />
+                <img class="xqimg" src="~@/assets/index/g.png" alt />
                 <p class="xqtitle">
                   ￥171
                   <s class="hua">￥120</s>
@@ -45,10 +45,10 @@
       </p>
       <van-col span="12" class="xmlefte">
         <div>
-          <img class="titleimg" src="http://dummyimage.com/116x116" alt />
+          <img class="titleimg" src="~@/assets/index/g.png" alt />
         </div>
         <div>
-          <img class="titleimg" src="http://dummyimage.com/116x116" alt />
+          <img class="titleimg" src="~@/assets/index/g.png" alt />
         </div>
       </van-col>
     </van-row>
@@ -56,22 +56,22 @@
       <van-col span="6">
         <p class="titlef">服饰鞋帽</p>
         <p class="titlex1">吃货嘉年华</p>
-        <img class="titlei" src="http://dummyimage.com/116x116" alt />
+        <img class="titlei" src="~@/assets/index/g.png" alt />
       </van-col>
       <van-col span="6">
         <p class="titlef">服饰鞋帽</p>
         <p class="titlex2">人间不值得</p>
-        <img class="titlei" src="http://dummyimage.com/116x116" alt />
+        <img class="titlei" src="~@/assets/index/g.png" alt />
       </van-col>
       <van-col span="6">
         <p class="titlef">服饰鞋帽</p>
         <p class="titlex3">为生活“家”满分</p>
-        <img class="titlei" src="http://dummyimage.com/116x116" alt />
+        <img class="titlei" src="~@/assets/index/g.png" alt />
       </van-col>
       <van-col span="6">
         <p class="titlef">服饰鞋帽</p>
         <p class="titlex4">品质生活必备</p>
-        <img class="titlei" src="http://dummyimage.com/116x116" alt />
+        <img class="titlei" src="~@/assets/index/g.png" alt />
       </van-col>
     </van-row>
   </div>
@@ -109,23 +109,26 @@ export default {
 .djs {
   color: #fe3f3f;
   font-size: 24px;
-  margin-left: 121px;
+  margin-left: 150px;
   line-height: 40px;
+  padding-top: 12px;
+  box-sizing:border-box;
 }
 .xmlefte {
   display: flex;
 }
 .title {
-  width: 121px;
-  height: 32px;
-  background: url(../../assets/index/xsms.png) no-repeat;
+  width: 150px;
+  height: 50px;
+  background: url(~@/assets/index/xsms.png) no-repeat;
   background-size: 100%;
   margin: 0;
   margin-left: 15px;
+  box-sizing:border-box;
 }
 .xqimg {
   width: 100%;
-  margin: 20px 0 10px 0;
+  margin: 10px 0 10px 0;
 }
 .xq {
   width: 116px;
@@ -141,10 +144,12 @@ export default {
   color: rgb(254, 63, 63);
   margin: 0;
   width: 120px;
-  padding: 2px 0 0 0;
   display: flex;
   justify-content: center;
   justify-items: center;
+  padding: 1px 12px;
+  font-size: 24px;
+  margin-left: -16px
 }
 .titleb {
   height: 30px;
@@ -176,24 +181,36 @@ export default {
   text-align: left;
   margin: 10px 0 10px 18px;
   font-size: 20px;
+  overflow:hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .titlex2 {
   color: rgb(25, 155, 255);
   text-align: left;
   margin: 10px 0 10px 18px;
   font-size: 20px;
+  overflow:hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .titlex3 {
   color: rgb(255, 25, 198);
   text-align: left;
   margin: 10px 0 10px 18px;
   font-size: 20px;
+  overflow:hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .titlex4 {
   color: rgb(255, 25, 25);
   text-align: left;
   margin: 10px 0 10px 18px;
   font-size: 20px;
+  overflow:hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .shop {
   margin-top: 10px;

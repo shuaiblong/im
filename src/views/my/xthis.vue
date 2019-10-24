@@ -3,12 +3,12 @@
  * @Author: chenjia
  * @Date: 2019-10-13 15:54:46
  * @LastEditors: chenjia
- * @LastEditTime: 2019-10-13 17:09:44
+ * @LastEditTime: 2019-10-24 17:17:21
  -->
 <template>
   <div class="box">
     <div class="goods">
-      <div class="item" v-for="x in 4" :key="x">
+      <div class="item" v-for="x in 4" :key="x" @click="enter">
         <img src="../../assets/index/g.png" alt />
         <p>连帽卫衣男士19年秋冬卡通印花新款棉质连帽卫衣男士19年秋冬卡通印花新款棉质</p>
         <div class="price">
@@ -40,6 +40,12 @@ export default {
         { text: "评论从高到低", value: 2 }
       ]
     };
+  },
+  methods: {
+    //   返回按钮
+    enter() {
+      this.$router.push("/goodjs");
+    }
   }
 };
 </script>

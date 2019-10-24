@@ -21,6 +21,9 @@
             <p class="lip" v-text="item.title"></p>
             <p class="lisp" v-text="item.price"></p>
           </li>
+          <li class="more">
+            <button @click="moreBtn()">查<br>看<br>更<br>多<br></button>
+          </li>
         </ul>
         <div></div>
       </div>
@@ -35,11 +38,19 @@ export default {
       kouhong: []
     };
   },
-  created() {
-    this.axios.get("../../../public/data/lianxi.json").then(res => {
-      console.log(res.data.lunbo[0].img);
-      this.kouhong = res.data.lunbo[0].img;
-    });
+  mounted(){
+    this.getBtn()
+  },
+  methods: {
+    getBtn() {
+      this.axios.get("http://192.168.0.32:5500/"+"../../../public/data/lianxi.json").then(res => {
+        console.log(res.data.lunbo[0].img);
+        this.kouhong = res.data.lunbo[0].img;
+      });
+    },
+    moreBtn() {
+      console.log('跳转更多')
+    }
   }
 };
 </script>
@@ -59,7 +70,7 @@ export default {
 .bg {
   width: 750px;
   height: 300px;
-  background: url(../../assets/index/ban_bg.png) no-repeat;
+  background: url(~@/assets/index/ban_bg.png) no-repeat;
   background-size: contain;
   position: relative;
 }
@@ -71,8 +82,11 @@ export default {
 .xbanner {
   position: relative;
   top: 240px;
-  margin-left: 4%;
+  padding-left: 4%;
   overflow: auto;
+}
+.xbanner::-webkit-scrollbar {
+    display: none;
 }
 .xbanner::after {
   content: "";
@@ -81,7 +95,7 @@ export default {
 }
 .xbanner .xbannerul {
   background: #f5f5f5;
-  width: 200%;
+  width: 140%;
 }
 .xbanner .xbannerul::after {
   content: "";
@@ -113,5 +127,16 @@ export default {
   text-align: left;
   margin: 10px 0 10px 20px;
   font-size: 20px;
+}
+.more{
+  text-align: center;
+  height: 180px;
+  /* line-height: 240px; */
+}
+.more button{
+  border: none;
+  background: none; 
+  margin-top: 90px;
+  font-size: 30px
 }
 </style>

@@ -12,23 +12,45 @@
       <van-tab title="精选">
         <van-row>
           <van-col span="12" v-for="(item,i) in xbannerlist" :key="i">
-            <div class="jxl">
-              <!-- 图片 -->
-              <img class="jxlimg" src="/goods/2019/10/20191015193637489.mp4," alt />
-              <!-- 详情 -->
-              <p class="jxlp1" v-text="item.productName"></p>
-              <div class="jxldiv">
-                <!-- 价格 -->
-                <span class="jxspan2" v-text="item.price"></span>
-                <span class="jxspan3">.80</span>
-                <!-- 秒杀 -->
-                <span class="jxspan4" v-if="item.isSeckill==1">秒杀</span>
+            <router-link to="/goodjs">
+              <div class="jxl">
+                <!-- 图片 -->
+                <img class="jxlimg" :src="item.image" alt />
+                <!-- 详情 -->
+                <p class="jxlp1" v-text="item.name"></p>
+                <div class="jxldiv">
+                  <!-- 价格 -->
+                  <span class="jxspan2" v-text="item.price"></span>
+                  <span class="jxspan3">.80</span>
+                  <!-- 秒杀 -->
+                  <span class="jxspan4" v-if="item.isSeckill==1">秒杀</span>
+                </div>
               </div>
-            </div>
+            </router-link>
           </van-col>
         </van-row>
       </van-tab>
-      <van-tab title="时尚"></van-tab>
+      <van-tab title="时尚">
+        <van-row>
+          <van-col span="12" v-for="(item,i) in xbannerlist1" :key="i">
+            <router-link to="/goodjs">
+              <div class="jxl">
+              <!-- 图片 -->
+                <img class="jxlimg" :src="item.image" alt />
+                <!-- 详情 -->
+                <p class="jxlp1" v-text="item.name"></p>
+                <div class="jxldiv">
+                  <!-- 价格 -->
+                  <span class="jxspan2" v-text="item.price"></span>
+                  <span class="jxspan3">.80</span>
+                  <!-- 秒杀 -->
+                  <span class="jxspan4" v-if="item.isSeckill==1">秒杀</span>
+                </div>
+              </div>
+            </router-link>
+          </van-col>
+        </van-row>
+      </van-tab>
       <van-tab title="生活"></van-tab>
       <van-tab title="母婴"></van-tab>
       <van-tab title="电器"></van-tab>
@@ -40,7 +62,22 @@ export default {
   data() {
     return {
       active: 0,
-      xbannerlist: []
+      xbannerlist: [
+        { code: '00001', image: require('@/assets/index/g.png'), name: '夏季最新时尚男女装',price:'￥128' },
+        { code: '00002', image: require('@/assets/index/g.png'), name: '夏季最新时尚男女装',price:'￥128' },
+        { code: '00003', image: require('@/assets/index/g.png'), name: '夏季最新时尚男女装',price:'￥128' },
+        { code: '00004', image: require('@/assets/index/g.png'), name: '夏季最新时尚男女装',price:'￥128' },
+        { code: '00005', image: require('@/assets/index/g.png'), name: '夏季最新时尚男女装',price:'￥128' },
+        { code: '00006', image: require('@/assets/index/g.png'), name: '夏季最新时尚男女装',price:'￥128' },       
+      ],
+      xbannerlist1: [
+        { code: '00001', image: require('@/assets/index/g.png'), name: '夏季最新时尚男女装',price:'￥99' },
+        { code: '00002', image: require('@/assets/index/g.png'), name: '夏季最新时尚男女装',price:'￥99' },
+        { code: '00003', image: require('@/assets/index/g.png'), name: '夏季最新时尚男女装',price:'￥99' },
+        { code: '00004', image: require('@/assets/index/g.png'), name: '夏季最新时尚男女装',price:'￥99' },
+        { code: '00005', image: require('@/assets/index/g.png'), name: '夏季最新时尚男女装',price:'￥99' },
+        { code: '00006', image: require('@/assets/index/g.png'), name: '夏季最新时尚男女装',price:'￥99' },       
+      ]
     };
   },
   created() {

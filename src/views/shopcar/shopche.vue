@@ -3,7 +3,7 @@
  * @Author: chenjia
  * @Date: 2019-10-11 11:38:44
  * @LastEditors: chenjia
- * @LastEditTime: 2019-10-21 09:01:55
+ * @LastEditTime: 2019-10-24 17:49:28
  -->
 <template>
   <div class="shopche">
@@ -63,7 +63,7 @@
                 </p>
               </div>
             </div>
-
+            <!-- 滑动删除事件 -->
             <template slot="right">
               <van-button square color="#999999" text="相似" />
               <van-button square color="#ffa128" text="收藏" />
@@ -71,6 +71,32 @@
             </template>
           </van-swipe-cell>
         </div>
+      </div>
+    </div>
+    <!-- 去结算一块 -->
+    <div class="zhifu">
+      <!-- 左 -->
+      <div>
+        <p>
+          <!-- 全选按钮 -->
+          <input type="checkbox" class="tui-checkbox" />&nbsp;
+          <span class="all">全选</span>
+        </p>
+      </div>
+      <!-- 中 -->
+      <div class="zoc">
+        <p class="zpic">合计:216.50</p>
+        <p class="zj">
+          <span class="picsz">总额:</span>
+          <!-- 总价 -->
+          <span class="picnum">232.00</span>&nbsp;
+          <span class="picsz">立减:</span>
+          <!-- 立减 -->
+          <span class="picnum">15.50</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </p>
+      </div>
+      <div>
+        <button class="jie" @click="enter">去结算(1)</button>
       </div>
     </div>
     <navfoot></navfoot>
@@ -94,6 +120,9 @@ export default {
     },
     onClickRight() {
       this.$toast("管理");
+    },
+    enter() {
+      this.$router.push("/zhifu");
     }
   },
   components: {
@@ -249,7 +278,7 @@ export default {
   margin-top: 40px;
 }
 .box {
-  margin-bottom: 150px;
+  margin-bottom: 250px;
 }
 .shopche {
   background: #f5f5f5;
@@ -257,5 +286,42 @@ export default {
 .shopbg {
   background: #ffffff;
   padding: 10px 0;
+}
+.zhifu {
+  position: fixed;
+  bottom: 105px;
+  left: 0;
+  display: flex;
+  text-align: left;
+  align-items: center;
+  background: #ffffff;
+  width: 750px;
+  box-sizing: border-box;
+  padding-left: 30px;
+  justify-content: space-between;
+}
+.all {
+  font-size: 26px;
+}
+.jie {
+  font-size: 30px;
+  width: 243px;
+  height: 105px;
+  border: 0;
+  color: white;
+  background: linear-gradient(to right, rgb(255, 114, 18), rgb(255, 89, 31));
+}
+.zpic {
+  margin: 10px 0;
+  font-size: 30px;
+}
+.zj {
+  margin: 0;
+}
+.picsz {
+  font-size: 24px;
+}
+.picnum {
+  font-size: 26px;
 }
 </style>

@@ -3,7 +3,7 @@
  * @Author: chenjia
  * @Date: 2019-10-02 11:18:09
  * @LastEditors: chenjia
- * @LastEditTime: 2019-10-10 18:28:50
+ * @LastEditTime: 2019-10-24 10:15:58
  -->
 <template>
   <div class="forlist">
@@ -103,27 +103,22 @@ export default {
   font-size: 28px;
 }
 .van-hairline--surround {
-  border: 1px solid #999999;
   border-left: 0;
   margin-top: 10%;
 }
-.van-hairline--surround li {
-  border-left: 1px solid #999999;
-}
+
 .regf {
   margin: 5% 0 0 5%;
   font-size: 28px;
   color: rgb(255, 114, 18);
 }
 .div1 {
-  margin-top: 11%;
   text-align: center;
 }
 .next {
   background: #fff;
-  color: rgb(255, 114, 18);
+  color: rgb(153, 153, 153);
   font-size: 32px;
-  padding: 0.5rem 1.3125rem;
   border-radius: 25px;
   border: 0;
 }

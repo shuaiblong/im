@@ -1,9 +1,9 @@
 <!--
  * @Descripttion: 
  * @Author: chenjia
- * @Date: 2019-10-22 13:39:42
+ * @Date: 2019-10-24 17:26:13
  * @LastEditors: chenjia
- * @LastEditTime: 2019-10-23 18:16:00
+ * @LastEditTime: 2019-10-24 18:50:34
  -->
        <template>
   <div class="box">
@@ -15,7 +15,7 @@
       <!-- 中间列表 -->
       <div class="sp">
         <ul>
-          <li>商品</li>
+          <li @click="tui">商品</li>
           <li>评价</li>
           <li>详情</li>
         </ul>
@@ -82,7 +82,7 @@
       <div class="xinxi">
         <p>
           <span>自营</span>
-          <span>CHANE香奈儿炫亮魅力唇膏3.5克魅力双唇精致演绎丝绒系列丝绒系列</span>
+          <span>&nbsp;&nbsp;CHANE香奈儿炫亮魅力唇膏3.5克魅力双唇精致演绎丝绒系列丝绒系列</span>
         </p>
       </div>
       <!-- 促销 消费满减 -->
@@ -168,11 +168,12 @@
           <p>颜色漂亮156</p>
         </div>
       </div>
+      <van-divider />
       <!-- 用户评价 -->
       <div class="yonghu">
         <div class="touxiang">
           <span>
-            <img src="../../assets/xihuan.png" />QWERTRY
+            <img src="../../assets/tu11.png" />QWERTRY
           </span>
           <span>2018-07-16</span>
         </div>
@@ -184,22 +185,22 @@
           <div class="tupian">
             <div>
               <p>
-                <img src="../../assets/swj.png" />
+                <img src="../../assets/tu.png" />
               </p>
             </div>
             <div>
               <p>
-                <img src="../../assets/swj.png" />
+                <img src="../../assets/tu.png" />
               </p>
             </div>
             <div>
               <p>
-                <img src="../../assets/swj.png" />
+                <img src="../../assets/tu.png" />
               </p>
             </div>
             <div>
               <p>
-                <img src="../../assets/swj.png" />
+                <img src="../../assets/tu.png" />
               </p>
             </div>
           </div>
@@ -212,7 +213,7 @@
       <div class="yonghu">
         <div class="touxiang">
           <span>
-            <img src="../../assets/xihuan.png" />QWERTRY
+            <img src="../../assets/tu12.png" />QWERTRY
           </span>
           <span>2018-07-16</span>
         </div>
@@ -224,22 +225,22 @@
           <div class="tupian">
             <div>
               <p>
-                <img src="../../assets/swj.png" />
+                <img src="../../assets/tu.png" />
               </p>
             </div>
             <div>
               <p>
-                <img src="../../assets/swj.png" />
+                <img src="../../assets/tu.png" />
               </p>
             </div>
             <div>
               <p>
-                <img src="../../assets/swj.png" />
+                <img src="../../assets/tu.png" />
               </p>
             </div>
             <div>
               <p>
-                <img src="../../assets/swj.png" />
+                <img src="../../assets/tu.png" />
               </p>
             </div>
           </div>
@@ -258,24 +259,22 @@
     </div>
     <!-- 官方旗舰店 -->
     <div class="qijiandian">
-      <div class="dianpu">
-        <div class="tubiao">
-          <span>
-            <img src="../../assets/xihuan.png" />
-          </span>
+      <div class="zhuan">
+        <div class="zhuanmai">
+          <div class="imgz">
+            <img class="zhuanimg" src="../../assets/ding.png" alt />
+          </div>
+          <div>
+            <p class="xiang">
+              chanel香奈儿官方旗舰店 &nbsp;
+              <span class="ziying">自营</span>
+            </p>
+            <p class="xiangzhu">15414关注</p>
+          </div>
         </div>
-        <div class="dianname">
-          <span>chanel香奈儿官方旗舰店</span>
-          <span>自营</span>
-        </div>
-        <div class="guanzhu">
-          <span>15414关注</span>
-        </div>
-        <div class="jinrudianpu">
-          <span>进入店铺</span>
-          <span>
-            <i class="iconfont icon-dibudaohanglan-"></i>
-          </span>
+        <div class="jinjian">
+          <p class="jinru">进入店铺</p>&nbsp;&nbsp;
+          <van-icon name="arrow" />
         </div>
       </div>
       <!-- 广告店铺简介 -->
@@ -285,25 +284,25 @@
       <div class="zhuanqu">
         <div>
           <p>
-            <img src="../../assets/zhiniaoku.png" />
+            <img src="../../assets/tu.png" />
           </p>
           <p class="zhuanqu_1">口红专区</p>
         </div>
         <div>
           <p>
-            <img src="../../assets/zhiniaoku.png" />
+            <img src="../../assets/tu.png" />
           </p>
           <p class="zhuanqu_1">面膜专区</p>
         </div>
         <div>
           <p>
-            <img src="../../assets/zhiniaoku.png" />
+            <img src="../../assets/tu.png" />
           </p>
           <p class="zhuanqu_1">唇彩专区</p>
         </div>
         <div>
           <p>
-            <img src="../../assets/zhiniaoku.png" />
+            <img src="../../assets/tu.png" />
           </p>
           <p class="zhuanqu_1">粉底专区</p>
         </div>
@@ -788,479 +787,6 @@
           </ul>
         </van-swipe-item>
       </van-swipe>
-      <!-- <div>
-        <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <ul>
-            <li>
-              <div class="tuijian">
-                <div>
-                  <p>
-                    <img src="../../assets/index/ysl.png" />
-                  </p>
-                </div>
-                <div class="xq">
-                  <p>香奈儿Chanel 口红/唇膏可可小姐水亮/丝绒系列润唇保湿口红配玫瑰花礼盒 丝绒系列58#豆沙色</p>
-                </div>
-                <div class="jia">
-                  <p>
-                    <span>￥</span>
-                    <span>150</span>
-                    <span>.00</span>
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="tuijian">
-                <div>
-                  <p>
-                    <img src="../../assets/index/ysl.png" />
-                  </p>
-                </div>
-                <div class="xq">
-                  <p>香奈儿Chanel 口红/唇膏可可小姐水亮/丝绒系列润唇保湿口红配玫瑰花礼盒 丝绒系列58#豆沙色</p>
-                </div>
-                <div class="jia">
-                  <p>
-                    <span>￥</span>
-                    <span>150</span>
-                    <span>.00</span>
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="tuijian">
-                <div>
-                  <p>
-                    <img src="../../assets/index/ysl.png" />
-                  </p>
-                </div>
-                <div class="xq">
-                  <p>香奈儿Chanel 口红/唇膏可可小姐水亮/丝绒系列润唇保湿口红配玫瑰花礼盒 丝绒系列58#豆沙色</p>
-                </div>
-                <div class="jia">
-                  <p>
-                    <span>￥</span>
-                    <span>150</span>
-                    <span>.00</span>
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="tuijian">
-                <div>
-                  <p>
-                    <img src="../../assets/index/ysl.png" />
-                  </p>
-                </div>
-                <div class="xq">
-                  <p>香奈儿Chanel 口红/唇膏可可小姐水亮/丝绒系列润唇保湿口红配玫瑰花礼盒 丝绒系列58#豆沙色</p>
-                </div>
-                <div class="jia">
-                  <p>
-                    <span>￥</span>
-                    <span>150</span>
-                    <span>.00</span>
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="tuijian">
-                <div>
-                  <p>
-                    <img src="../../assets/index/ysl.png" />
-                  </p>
-                </div>
-                <div class="xq">
-                  <p>香奈儿Chanel 口红/唇膏可可小姐水亮/丝绒系列润唇保湿口红配玫瑰花礼盒 丝绒系列58#豆沙色</p>
-                </div>
-                <div class="jia">
-                  <p>
-                    <span>￥</span>
-                    <span>150</span>
-                    <span>.00</span>
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="tuijian">
-                <div>
-                  <p>
-                    <img src="../../assets/index/ysl.png" />
-                  </p>
-                </div>
-                <div class="xq">
-                  <p>香奈儿Chanel 口红/唇膏可可小姐水亮/丝绒系列润唇保湿口红配玫瑰花礼盒 丝绒系列58#豆沙色</p>
-                </div>
-                <div class="jia">
-                  <p>
-                    <span>￥</span>
-                    <span>150</span>
-                    <span>.00</span>
-                  </p>
-                </div>
-              </div>
-            </li>
-          </ul>
-            </div>
-            <div class="swiper-slide"><ul>
-            <li>
-              <div class="tuijian">
-                <div>
-                  <p>
-                    <img src="../../assets/index/ysl.png" />
-                  </p>
-                </div>
-                <div class="xq">
-                  <p>香奈儿Chanel 口红/唇膏可可小姐水亮/丝绒系列润唇保湿口红配玫瑰花礼盒 丝绒系列58#豆沙色</p>
-                </div>
-                <div class="jia">
-                  <p>
-                    <span>￥</span>
-                    <span>150</span>
-                    <span>.00</span>
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="tuijian">
-                <div>
-                  <p>
-                    <img src="../../assets/index/ysl.png" />
-                  </p>
-                </div>
-                <div class="xq">
-                  <p>香奈儿Chanel 口红/唇膏可可小姐水亮/丝绒系列润唇保湿口红配玫瑰花礼盒 丝绒系列58#豆沙色</p>
-                </div>
-                <div class="jia">
-                  <p>
-                    <span>￥</span>
-                    <span>150</span>
-                    <span>.00</span>
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="tuijian">
-                <div>
-                  <p>
-                    <img src="../../assets/index/ysl.png" />
-                  </p>
-                </div>
-                <div class="xq">
-                  <p>香奈儿Chanel 口红/唇膏可可小姐水亮/丝绒系列润唇保湿口红配玫瑰花礼盒 丝绒系列58#豆沙色</p>
-                </div>
-                <div class="jia">
-                  <p>
-                    <span>￥</span>
-                    <span>150</span>
-                    <span>.00</span>
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="tuijian">
-                <div>
-                  <p>
-                    <img src="../../assets/index/ysl.png" />
-                  </p>
-                </div>
-                <div class="xq">
-                  <p>香奈儿Chanel 口红/唇膏可可小姐水亮/丝绒系列润唇保湿口红配玫瑰花礼盒 丝绒系列58#豆沙色</p>
-                </div>
-                <div class="jia">
-                  <p>
-                    <span>￥</span>
-                    <span>150</span>
-                    <span>.00</span>
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="tuijian">
-                <div>
-                  <p>
-                    <img src="../../assets/index/ysl.png" />
-                  </p>
-                </div>
-                <div class="xq">
-                  <p>香奈儿Chanel 口红/唇膏可可小姐水亮/丝绒系列润唇保湿口红配玫瑰花礼盒 丝绒系列58#豆沙色</p>
-                </div>
-                <div class="jia">
-                  <p>
-                    <span>￥</span>
-                    <span>150</span>
-                    <span>.00</span>
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="tuijian">
-                <div>
-                  <p>
-                    <img src="../../assets/index/ysl.png" />
-                  </p>
-                </div>
-                <div class="xq">
-                  <p>香奈儿Chanel 口红/唇膏可可小姐水亮/丝绒系列润唇保湿口红配玫瑰花礼盒 丝绒系列58#豆沙色</p>
-                </div>
-                <div class="jia">
-                  <p>
-                    <span>￥</span>
-                    <span>150</span>
-                    <span>.00</span>
-                  </p>
-                </div>
-              </div>
-            </li>
-          </ul></div>
-            <div class="swiper-slide"><ul>
-            <li>
-              <div class="tuijian">
-                <div>
-                  <p>
-                    <img src="../../assets/index/ysl.png" />
-                  </p>
-                </div>
-                <div class="xq">
-                  <p>香奈儿Chanel 口红/唇膏可可小姐水亮/丝绒系列润唇保湿口红配玫瑰花礼盒 丝绒系列58#豆沙色</p>
-                </div>
-                <div class="jia">
-                  <p>
-                    <span>￥</span>
-                    <span>150</span>
-                    <span>.00</span>
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="tuijian">
-                <div>
-                  <p>
-                    <img src="../../assets/index/ysl.png" />
-                  </p>
-                </div>
-                <div class="xq">
-                  <p>香奈儿Chanel 口红/唇膏可可小姐水亮/丝绒系列润唇保湿口红配玫瑰花礼盒 丝绒系列58#豆沙色</p>
-                </div>
-                <div class="jia">
-                  <p>
-                    <span>￥</span>
-                    <span>150</span>
-                    <span>.00</span>
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="tuijian">
-                <div>
-                  <p>
-                    <img src="../../assets/index/ysl.png" />
-                  </p>
-                </div>
-                <div class="xq">
-                  <p>香奈儿Chanel 口红/唇膏可可小姐水亮/丝绒系列润唇保湿口红配玫瑰花礼盒 丝绒系列58#豆沙色</p>
-                </div>
-                <div class="jia">
-                  <p>
-                    <span>￥</span>
-                    <span>150</span>
-                    <span>.00</span>
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="tuijian">
-                <div>
-                  <p>
-                    <img src="../../assets/index/ysl.png" />
-                  </p>
-                </div>
-                <div class="xq">
-                  <p>香奈儿Chanel 口红/唇膏可可小姐水亮/丝绒系列润唇保湿口红配玫瑰花礼盒 丝绒系列58#豆沙色</p>
-                </div>
-                <div class="jia">
-                  <p>
-                    <span>￥</span>
-                    <span>150</span>
-                    <span>.00</span>
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="tuijian">
-                <div>
-                  <p>
-                    <img src="../../assets/index/ysl.png" />
-                  </p>
-                </div>
-                <div class="xq">
-                  <p>香奈儿Chanel 口红/唇膏可可小姐水亮/丝绒系列润唇保湿口红配玫瑰花礼盒 丝绒系列58#豆沙色</p>
-                </div>
-                <div class="jia">
-                  <p>
-                    <span>￥</span>
-                    <span>150</span>
-                    <span>.00</span>
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="tuijian">
-                <div>
-                  <p>
-                    <img src="../../assets/index/ysl.png" />
-                  </p>
-                </div>
-                <div class="xq">
-                  <p>香奈儿Chanel 口红/唇膏可可小姐水亮/丝绒系列润唇保湿口红配玫瑰花礼盒 丝绒系列58#豆沙色</p>
-                </div>
-                <div class="jia">
-                  <p>
-                    <span>￥</span>
-                    <span>150</span>
-                    <span>.00</span>
-                  </p>
-                </div>
-              </div>
-            </li>
-          </ul></div>
-            <div class="swiper-slide"><ul>
-            <li>
-              <div class="tuijian">
-                <div>
-                  <p>
-                    <img src="../../assets/index/ysl.png" />
-                  </p>
-                </div>
-                <div class="xq">
-                  <p>香奈儿Chanel 口红/唇膏可可小姐水亮/丝绒系列润唇保湿口红配玫瑰花礼盒 丝绒系列58#豆沙色</p>
-                </div>
-                <div class="jia">
-                  <p>
-                    <span>￥</span>
-                    <span>150</span>
-                    <span>.00</span>
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="tuijian">
-                <div>
-                  <p>
-                    <img src="../../assets/index/ysl.png" />
-                  </p>
-                </div>
-                <div class="xq">
-                  <p>香奈儿Chanel 口红/唇膏可可小姐水亮/丝绒系列润唇保湿口红配玫瑰花礼盒 丝绒系列58#豆沙色</p>
-                </div>
-                <div class="jia">
-                  <p>
-                    <span>￥</span>
-                    <span>150</span>
-                    <span>.00</span>
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="tuijian">
-                <div>
-                  <p>
-                    <img src="../../assets/index/ysl.png" />
-                  </p>
-                </div>
-                <div class="xq">
-                  <p>香奈儿Chanel 口红/唇膏可可小姐水亮/丝绒系列润唇保湿口红配玫瑰花礼盒 丝绒系列58#豆沙色</p>
-                </div>
-                <div class="jia">
-                  <p>
-                    <span>￥</span>
-                    <span>150</span>
-                    <span>.00</span>
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="tuijian">
-                <div>
-                  <p>
-                    <img src="../../assets/index/ysl.png" />
-                  </p>
-                </div>
-                <div class="xq">
-                  <p>香奈儿Chanel 口红/唇膏可可小姐水亮/丝绒系列润唇保湿口红配玫瑰花礼盒 丝绒系列58#豆沙色</p>
-                </div>
-                <div class="jia">
-                  <p>
-                    <span>￥</span>
-                    <span>150</span>
-                    <span>.00</span>
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="tuijian">
-                <div>
-                  <p>
-                    <img src="../../assets/index/ysl.png" />
-                  </p>
-                </div>
-                <div class="xq">
-                  <p>香奈儿Chanel 口红/唇膏可可小姐水亮/丝绒系列润唇保湿口红配玫瑰花礼盒 丝绒系列58#豆沙色</p>
-                </div>
-                <div class="jia">
-                  <p>
-                    <span>￥</span>
-                    <span>150</span>
-                    <span>.00</span>
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="tuijian">
-                <div>
-                  <p>
-                    <img src="../../assets/index/ysl.png" />
-                  </p>
-                </div>
-                <div class="xq">
-                  <p>香奈儿Chanel 口红/唇膏可可小姐水亮/丝绒系列润唇保湿口红配玫瑰花礼盒 丝绒系列58#豆沙色</p>
-                </div>
-                <div class="jia">
-                  <p>
-                    <span>￥</span>
-                    <span>150</span>
-                    <span>.00</span>
-                  </p>
-                </div>
-              </div>
-            </li>
-          </ul></div>
-        </div>
-        <div class="swiper-pagination"></div>
-    </div>
-      </div>-->
     </div>
     <!-- 详情介绍 -->
     <div class="xqjs">
@@ -1340,7 +866,7 @@
       <van-goods-action>
         <van-goods-action-icon icon="shop-o" text="店铺" />
         <van-goods-action-icon icon="chat-o" text="联系客服" />
-        <van-goods-action-icon icon="cart-o" text="购物车" info="15" />
+        <van-goods-action-icon icon="cart-o" text="购物车" info="15" @click="enter" />
         <van-goods-action-button color="rgb(255,108,0)" type text="加入购物车" />
         <van-goods-action-button color="rgb(249,44,78)" type="danger" text="立即购买" />
       </van-goods-action>
@@ -1368,6 +894,12 @@ export default {
     },
     add() {
       this.$router.push("/goodxqpj");
+    },
+    tui() {
+      this.$router.push("/index");
+    },
+    enter() {
+      this.$router.push("/shopche");
     }
   }
 };
@@ -1453,8 +985,6 @@ export default {
   color: rgb(255, 255, 255);
   background-color: rgb(51, 51, 51);
   border-radius: 15px 0px 0px 15px;
-}
-.custom-indicator {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -1472,6 +1002,7 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 95px;
 }
 .price span {
   color: rgb(255, 28, 28);
@@ -1491,11 +1022,10 @@ export default {
   margin-left: 26px;
 }
 .jg {
-  margin: 26px 20px;
+  margin-left: 26px;
 }
 .shou {
   display: inline-flex;
-  margin-top: 68px;
 }
 .icon-like-line {
   font-size: 40px;
@@ -1515,7 +1045,7 @@ export default {
 }
 .ysc p,
 .sc p {
-  margin-top: -10px;
+  margin: 0px;
 }
 .danjia {
   width: 100%;
@@ -1535,6 +1065,9 @@ export default {
   color: rgb(255, 93, 29);
 }
 .danjia ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 190px;
   height: 37px;
   font-size: 24px;
@@ -1554,18 +1087,26 @@ export default {
   text-align: justify;
   margin: 0px 30px;
 }
+.xinxi p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
 .xinxi span:first-of-type {
   font-size: 20px;
   color: rgb(255, 255, 255);
-  font-family: "PingFang-SC-Regular";
-  border: 1px solid rgb(255, 89, 31);
+  padding: 4px 10px 0 10px;
+  border: 2px solid rgb(255, 89, 31);
   background-color: rgb(255, 108, 0);
-  border-radius: 13px;
+  border-radius: 25px;
 }
 .xinxi :nth-child(2) {
   color: rgb(51, 51, 51);
   font-size: 28px;
   font-family: "PingFang-SC-Medium";
+  vertical-align: middle;
 }
 .zy {
   width: 100%;
@@ -1584,6 +1125,7 @@ export default {
   color: rgb(255, 101, 25);
   font-family: "PingFang-SC-Regular";
   border: 2px solid rgb(255, 108, 0);
+  padding-top: 4px;
   border-radius: 5px;
   margin-left: 30px;
 }
@@ -1721,8 +1263,8 @@ export default {
   color: rgb(51, 51, 51);
   border: 2px solid pink;
   background-color: pink;
-  border-radius: 10px;
-  margin-left: 18px;
+  border-radius: 20px;
+  padding: 6px 10px;
   margin-top: 6px;
 }
 .touxiang {
@@ -1782,12 +1324,13 @@ export default {
   margin-top: -10px;
 }
 .allpingjia {
-  margin-top: -20px;
+  margin-top: -35px;
 }
 .allpingjia span:first-of-type {
   color: rgb(51, 51, 51);
   font-size: 24px;
   font-family: "PingFang-SC-Regular";
+  vertical-align: middle;
 }
 .icon-shuangjiantouyou {
   position: absolute;
@@ -1795,11 +1338,9 @@ export default {
   color: rgb(51, 51, 51);
   font-size: 36px;
   vertical-align: middle;
-  margin-top: -16px;
 }
 .qijiandian {
   width: 100%;
-  height: 400px;
   background-color: rgb(255, 255, 255);
   margin-top: 20px;
 }
@@ -1827,7 +1368,6 @@ export default {
   border: 2px solid rgb(255, 89, 31);
   background-color: rgb(255, 89, 31);
   border-radius: 13px;
-  margin-left: 50px;
 }
 .guanzhu span {
   font-size: 22px;
@@ -1846,13 +1386,14 @@ export default {
 }
 .jianjie span {
   float: left;
-  margin-left: 30px;
+  margin-left: 20px;
   color: rgb(51, 51, 51);
   font-size: 24px;
   font-family: "PingFang-SC-Regular";
   margin-top: 30px;
 }
 .zhuanqu img {
+  width: 150px;
   height: 159px;
 }
 .jianjie:after {
@@ -1971,7 +1512,10 @@ export default {
 .spjs {
   width: 100%;
   height: 1090px;
-  background: #fff;
+  background: #ffffff;
+}
+.spjs_1 {
+  background: #ffffff;
 }
 .spjs .spjs_1 span,
 .ggcs span {
@@ -1991,7 +1535,8 @@ export default {
 /* 商品信息 */
 .spxx,
 .ggcs {
-  margin-top: 29px;
+  padding: 23px 0px;
+  background: #ffffff;
 }
 .spxx .shangpin,
 .ggcs_1 .guige {
@@ -1999,6 +1544,7 @@ export default {
   color: rgb(153, 153, 153);
   font-family: "PingFang-SC-Regular";
   vertical-align: middle;
+  font-style: italic;
 }
 .spxx img,
 .ggcs_1 img {
@@ -2009,6 +1555,10 @@ export default {
 .spxx .img1,
 .ggcs_1 .img1 {
   margin-right: 20px;
+}
+.ggcs_1 {
+  padding-bottom: 20px;
+  background: #ffffff;
 }
 .spxx .img2,
 .ggcs_1 .img2 {
@@ -2032,12 +1582,12 @@ export default {
 .table-a {
   width: 100%;
   height: 500px;
+  background: #ffffff;
 }
 table {
   border-collapse: collapse;
   width: 95%;
   height: 395px;
-  margin-top: 30px;
 }
 .table-a table td {
   border: 1px solid #ddd;
@@ -2045,5 +1595,52 @@ table {
 .foot {
   width: 750px;
   height: 107px;
+}
+.van-goods-action-button {
+  border-radius: 0px;
+  width: 207px;
+  height: 105px;
+  margin-right: 0px;
+}
+.zhuan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  text-align: left;
+}
+.zhuanmai {
+  display: flex;
+}
+.zhuanimg {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+}
+.imgz {
+  display: flex;
+  align-items: center;
+}
+.xiang {
+  margin: 0 0 20px 0;
+  font-size: 24px;
+}
+.xiangzhu {
+  font-size: 22px;
+  color: rgb(153, 153, 153);
+  margin: 0;
+}
+.ziying {
+  background: rgb(255, 89, 31);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 25px;
+}
+.jinru {
+  color: rgb(255, 103, 24);
+}
+.jinjian {
+  display: flex;
+  align-items: center;
 }
 </style>
