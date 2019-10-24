@@ -3,7 +3,7 @@
  * @Author: chenjia
  * @Date: 2019-10-12 15:30:19
  * @LastEditors: chenjia
- * @LastEditTime: 2019-10-15 17:22:14
+ * @LastEditTime: 2019-10-23 18:10:29
  -->
 <template>
   <div class="goods">
@@ -194,6 +194,7 @@ export default {
   -webkit-line-clamp: 1;
   text-overflow: hidden;
   margin-left: -1px;
+  overflow: hidden;
 }
 .van-card__desc {
   font-size: 14px;

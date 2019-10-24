@@ -3,7 +3,7 @@
  * @Author: chenjia
  * @Date: 2019-09-28 17:54:07
  * @LastEditors: chenjia
- * @LastEditTime: 2019-10-12 15:47:36
+ * @LastEditTime: 2019-10-23 16:36:37
  -->
 <template>
   <!-- 头部导航栏 -->
@@ -33,9 +33,9 @@
 </template>
 <script>
 export default {
-  methods:{
-    add(){
-      this.$router.push("/sou")
+  methods: {
+    add() {
+      this.$router.push("/sou");
     }
   }
 };
@@ -51,7 +51,7 @@ export default {
   left: 0;
   width: 100%;
   z-index: 5;
-  background: #fe3855;
+  background-image: url(../assets/index/top_bg.png);
   /* background: red; */
 }
 .nav-head .scan {
@@ -107,5 +107,4 @@ export default {
   line-height: 60px;
   color: white;
 }
-
 </style>

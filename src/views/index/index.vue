@@ -3,10 +3,10 @@
  * @Author: chenjia
  * @Date: 2019-09-30 18:50:13
  * @LastEditors: chenjia
- * @LastEditTime: 2019-10-12 15:45:56
+ * @LastEditTime: 2019-10-23 17:06:16
  -->
 <template>
-    <div class="index">
+  <div class="index">
     <!-- 引入头部 -->
     <navhead></navhead>
     <!-- 引入轮播 -->
@@ -14,16 +14,16 @@
     <!-- 轮播下几个活动 -->
     <ul class="xiang">
       <li>
-        <i class="iconfont icon-baohu"></i>售后无忧
+        <i class="iconfont icon-ico_home_AfterSale"></i>售后无忧
       </li>
       <li>
-         <i class="iconfont icon-ico_home_AfterSale"></i>假一赔十
+        <i class="iconfont icon-baohu"></i>假一赔十
       </li>
       <li>
-         <i class="iconfont icon-xianshimiaosha"></i>天天秒杀
+        <i class="iconfont icon-xianshimiaosha"></i>天天秒杀
       </li>
       <li>
-         <i class="iconfont icon-baohu"></i>急速到货
+        <i class="iconfont icon-baohu"></i>急速到货
       </li>
     </ul>
     <!-- x轴滚动图 -->
@@ -38,27 +38,27 @@
     <tablist class="top"></tablist>
     <!-- 底部导航栏 -->
     <navfoot></navfoot>
-    </div>
+  </div>
 </template>
 <script>
 // 引入头部导航
-import navhead from '../../components/head'
+import navhead from "../../components/head";
 // 引入轮播模块
-import banner from './banner'
+import banner from "./banner";
 // 引入横向滚动模块
-import xbanner from './xbanner'
+import xbanner from "./xbanner";
 // 引入活动图
-import activity from './activity'
+import activity from "./activity";
 // 引入详情模块
-import xiang from './xiangqing'
+import xiang from "./xiangqing";
 // 引入活动轮播模块
-import huodong from './huodong'
+import huodong from "./huodong";
 // 引入TAB类详情
-import tablist from './tablist'
+import tablist from "./tablist";
 // 引入底部导航栏
-import navfoot from '../../components/foot'
+import navfoot from "../../components/foot";
 export default {
-    components:{
+  components: {
     navhead,
     banner,
     xbanner,
@@ -68,37 +68,37 @@ export default {
     tablist,
     navfoot
   }
-}
+};
 </script>
 <style scoped>
-.top{
+.top {
   margin-top: 280px;
 }
-.index{
+.index {
   background: #f5f5f5;
 }
-.nav-foot{
+.nav-foot {
   z-index: 1;
 }
-.van-tabbar-item--active{
-  color:#ff6d15;
+.van-tabbar-item--active {
+  color: #ff6d15;
 }
-.xiang{
-  margin:0 24px;
+.xiang {
+  margin: 0 24px;
   font-size: 20px;
   display: flex;
   justify-content: space-between;
 }
-.xiang li{
-  color: #ff1e00;
+.xiang li {
+  color: rgb(255, 109, 21);
 }
-.icon-ico_home_AfterSale{
-  font-size:20px;
-}
-.icon-xianshimiaosha{
+.icon-ico_home_AfterSale {
   font-size: 20px;
 }
-.icon-baohu{
+.icon-xianshimiaosha {
+  font-size: 20px;
+}
+.icon-baohu {
   font-size: 20px;
 }
 </style>

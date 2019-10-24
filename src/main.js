@@ -3,7 +3,7 @@
  * @Author: chenjia
  * @Date: 2019-09-28 17:54:07
  * @LastEditors: chenjia
- * @LastEditTime: 2019-10-21 09:01:20
+ * @LastEditTime: 2019-10-23 17:17:00
  */
 import Vue from 'vue'
 import App from './App.vue'
@@ -12,7 +12,7 @@ import store from './store'
 //引入vant
 import Vant from 'vant';
 // 引入rem自适应文件
-import 'lib-flexible/flexible'
+import 'amfe-flexible/index'
 // 引入axios
 import axios from 'axios'
 import './assets/iconfont/iconfont.css'
@@ -33,7 +33,7 @@ axios.defaults.baseURL = 'http://192.168.0.32:5500/';
 Vue.use(Vant);
 Vue.config.productionTip = false;
 new Vue({
-  router,
-  store,
-  render: h => h(App)
+    router,
+    store,
+    render: h => h(App)
 }).$mount('#app')

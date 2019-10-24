@@ -1,21 +1,30 @@
 /*
  * @Descripttion: 
  * @Author: chenjia
- * @Date: 2019-10-08 16:34:07
+ * @Date: 2019-10-23 16:24:04
  * @LastEditors: chenjia
- * @LastEditTime: 2019-10-14 18:45:05
+ * @LastEditTime: 2019-10-23 17:15:45
  */
+
 module.exports = {
-  chainWebpack: config => {
-    config.module
-      .rule('css')
-      .test(/\.css$/)
-      .oneOf('vue')
-      .resourceQuery(/\?vue/)
-      .use('px2rem')
-      .loader('px2rem-loader')
-      .options({
-        remUnit: 75
-      })
-  }
+    css: {
+        loaderOptions: {
+            postcss: {
+                plugins: [
+                    require('postcss-pxtorem')({ // 把px单位换算成rem单位
+                        rootValue: 75, // 换算的基数(设计图750的根字体为75)
+                        // selectorBlackList: ['weui', 'mu'], // 忽略转换正则匹配项
+                        propList: ['*']
+                    })
+                ]
+            }
+        }
+    },
+    configureWebpack: config => {
+        if (process.env.NODE_ENV === 'production') {
+            // 为生产环境修改配置...
+        } else {
+            // 为开发环境修改配置...
+        }
+    }
 }

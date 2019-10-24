@@ -3,7 +3,7 @@
  * @Author: chenjia
  * @Date: 2019-10-22 13:39:42
  * @LastEditors: chenjia
- * @LastEditTime: 2019-10-22 13:50:59
+ * @LastEditTime: 2019-10-23 18:16:00
  -->
        <template>
   <div class="box">
@@ -1491,10 +1491,11 @@ export default {
   margin-left: 26px;
 }
 .jg {
-  margin-left: 26px;
+  margin: 26px 20px;
 }
 .shou {
   display: inline-flex;
+  margin-top: 68px;
 }
 .icon-like-line {
   font-size: 40px;

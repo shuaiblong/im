@@ -3,11 +3,18 @@
  * @Author: chenjia
  * @Date: 2019-09-29 13:07:02
  * @LastEditors: chenjia
- * @LastEditTime: 2019-10-14 17:54:20
+ * @LastEditTime: 2019-10-23 17:32:29
  -->
 <template>
   <!-- 轮播图 -->
   <div class="bgbanner">
+    <div class="biao">
+      <span class="re">热搜:</span>
+      <span class="xiang">香奈儿口红</span>
+      <span class="xiang">ahc套装</span>
+      <span class="xiang">母婴保健</span>
+      <span class="xiang">娇韵诗精华</span>
+    </div>
     <van-swipe
       :autoplay="3000"
       :loop="true"
@@ -54,5 +61,20 @@ export default {
   width: 100%;
   height: 100%;
   pointer-events: none;
+}
+.biao {
+  font-size: 20px;
+  box-sizing: border-box;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  padding: 15px 0 20px 30px;
+}
+.biao span {
+  margin-right: 10px;
+}
+.xiang {
+  background: #ff5a77;
+  padding: 4px 10px;
+  border-radius: 25px;
 }
 </style>
